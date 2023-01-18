@@ -1,0 +1,984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="UIS CORE Erhebung v3.0" Company="GDS Innovations GmbH" Copyright="2021 Alle Rechte vorbehalten" Description="lftsat. Studentenstatistk Core">
+  <ActionDesign>
+    <Actions>
+      <Action Id="Erhebung.CheckData" ImageName="Checkbox" />
+      <Action Id="Erhebung.Reset" ImageName="Reset" />
+    </Actions>
+  </ActionDesign>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="22.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="22.2.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="Abschlüsse_ListView" NewItemRowPosition="Top" AllowEdit="True" />
+    <ListView Id="Erhebung_Erhebungsdaten_ListView">
+      <Columns>
+        <ColumnInfo Id="EF10" Removed="True" />
+        <ColumnInfo Id="EF100" Removed="True" />
+        <ColumnInfo Id="EF101" Removed="True" />
+        <ColumnInfo Id="EF102" Removed="True" />
+        <ColumnInfo Id="EF103" Removed="True" />
+        <ColumnInfo Id="EF104" Removed="True" />
+        <ColumnInfo Id="EF105" Removed="True" />
+        <ColumnInfo Id="EF106" Removed="True" />
+        <ColumnInfo Id="EF107" Removed="True" />
+        <ColumnInfo Id="EF108" Removed="True" />
+        <ColumnInfo Id="EF109" Removed="True" />
+        <ColumnInfo Id="EF11" Removed="True" />
+        <ColumnInfo Id="EF110" Removed="True" />
+        <ColumnInfo Id="EF111" Removed="True" />
+        <ColumnInfo Id="EF112" Removed="True" />
+        <ColumnInfo Id="EF113" Removed="True" />
+        <ColumnInfo Id="EF114" Removed="True" />
+        <ColumnInfo Id="EF115" Removed="True" />
+        <ColumnInfo Id="EF116" Removed="True" />
+        <ColumnInfo Id="EF117" Removed="True" />
+        <ColumnInfo Id="EF118" Removed="True" />
+        <ColumnInfo Id="EF119U1" Removed="True" />
+        <ColumnInfo Id="EF119U2" Removed="True" />
+        <ColumnInfo Id="EF120" Removed="True" />
+        <ColumnInfo Id="EF121" Removed="True" />
+        <ColumnInfo Id="EF122" Removed="True" />
+        <ColumnInfo Id="EF123" Removed="True" />
+        <ColumnInfo Id="EF124" Removed="True" />
+        <ColumnInfo Id="EF125" Removed="True" />
+        <ColumnInfo Id="EF126" Removed="True" />
+        <ColumnInfo Id="EF127" Removed="True" />
+        <ColumnInfo Id="EF128" Removed="True" />
+        <ColumnInfo Id="EF129" Removed="True" />
+        <ColumnInfo Id="EF12U1" Removed="True" />
+        <ColumnInfo Id="EF12U2" Removed="True" />
+        <ColumnInfo Id="EF130" Removed="True" />
+        <ColumnInfo Id="EF131" Removed="True" />
+        <ColumnInfo Id="EF132" Removed="True" />
+        <ColumnInfo Id="EF133" Removed="True" />
+        <ColumnInfo Id="EF134" Removed="True" />
+        <ColumnInfo Id="EF135" Removed="True" />
+        <ColumnInfo Id="EF136" Removed="True" />
+        <ColumnInfo Id="EF137" Removed="True" />
+        <ColumnInfo Id="EF138" Removed="True" />
+        <ColumnInfo Id="EF139" Removed="True" />
+        <ColumnInfo Id="EF13U1" Removed="True" />
+        <ColumnInfo Id="EF13U2" Removed="True" />
+        <ColumnInfo Id="EF14" Removed="True" />
+        <ColumnInfo Id="EF140" Removed="True" />
+        <ColumnInfo Id="EF141" Removed="True" />
+        <ColumnInfo Id="EF142" Removed="True" />
+        <ColumnInfo Id="EF143" Removed="True" />
+        <ColumnInfo Id="EF144" Removed="True" />
+        <ColumnInfo Id="EF145" Removed="True" />
+        <ColumnInfo Id="EF146" Removed="True" />
+        <ColumnInfo Id="EF147" Removed="True" />
+        <ColumnInfo Id="EF148" Removed="True" />
+        <ColumnInfo Id="EF149" Removed="True" />
+        <ColumnInfo Id="EF15" Removed="True" />
+        <ColumnInfo Id="EF150" Removed="True" />
+        <ColumnInfo Id="EF151" Removed="True" />
+        <ColumnInfo Id="EF152" Removed="True" />
+        <ColumnInfo Id="EF153" Removed="True" />
+        <ColumnInfo Id="EF154" Removed="True" />
+        <ColumnInfo Id="EF155" Removed="True" />
+        <ColumnInfo Id="EF156" Removed="True" />
+        <ColumnInfo Id="EF157" Removed="True" />
+        <ColumnInfo Id="EF158" Removed="True" />
+        <ColumnInfo Id="EF159" Removed="True" />
+        <ColumnInfo Id="EF16" Removed="True" />
+        <ColumnInfo Id="EF160" Removed="True" />
+        <ColumnInfo Id="EF161" Removed="True" />
+        <ColumnInfo Id="EF162" Removed="True" />
+        <ColumnInfo Id="EF163" Removed="True" />
+        <ColumnInfo Id="EF164" Removed="True" />
+        <ColumnInfo Id="EF165" Removed="True" />
+        <ColumnInfo Id="EF166" Removed="True" />
+        <ColumnInfo Id="EF167" Removed="True" />
+        <ColumnInfo Id="EF168" Removed="True" />
+        <ColumnInfo Id="EF169" Removed="True" />
+        <ColumnInfo Id="EF17" Removed="True" />
+        <ColumnInfo Id="EF170" Removed="True" />
+        <ColumnInfo Id="EF171" Removed="True" />
+        <ColumnInfo Id="EF172" Removed="True" />
+        <ColumnInfo Id="EF173" Removed="True" />
+        <ColumnInfo Id="EF174" Removed="True" />
+        <ColumnInfo Id="EF175" Removed="True" />
+        <ColumnInfo Id="EF176" Removed="True" />
+        <ColumnInfo Id="EF177" Removed="True" />
+        <ColumnInfo Id="EF178" Removed="True" />
+        <ColumnInfo Id="EF179" Removed="True" />
+        <ColumnInfo Id="EF18" Removed="True" />
+        <ColumnInfo Id="EF180" Removed="True" />
+        <ColumnInfo Id="EF181" Removed="True" />
+        <ColumnInfo Id="EF182" Removed="True" />
+        <ColumnInfo Id="EF183" Removed="True" />
+        <ColumnInfo Id="EF184" Removed="True" />
+        <ColumnInfo Id="EF185" Removed="True" />
+        <ColumnInfo Id="EF186" Removed="True" />
+        <ColumnInfo Id="EF187" Removed="True" />
+        <ColumnInfo Id="EF188" Removed="True" />
+        <ColumnInfo Id="EF189" Removed="True" />
+        <ColumnInfo Id="EF19" Removed="True" />
+        <ColumnInfo Id="EF190" Removed="True" />
+        <ColumnInfo Id="EF191" Removed="True" />
+        <ColumnInfo Id="EF192" Removed="True" />
+        <ColumnInfo Id="EF193" Removed="True" />
+        <ColumnInfo Id="EF194" Removed="True" />
+        <ColumnInfo Id="EF195" Removed="True" />
+        <ColumnInfo Id="EF196" Removed="True" />
+        <ColumnInfo Id="EF197" Removed="True" />
+        <ColumnInfo Id="EF198" Removed="True" />
+        <ColumnInfo Id="EF199" Removed="True" />
+        <ColumnInfo Id="EF20" Removed="True" />
+        <ColumnInfo Id="EF21" Removed="True" />
+        <ColumnInfo Id="EF22" Removed="True" />
+        <ColumnInfo Id="EF23" Removed="True" />
+        <ColumnInfo Id="EF24" Removed="True" />
+        <ColumnInfo Id="EF25" Removed="True" />
+        <ColumnInfo Id="EF26" Removed="True" />
+        <ColumnInfo Id="EF27" Removed="True" />
+        <ColumnInfo Id="EF28" Removed="True" />
+        <ColumnInfo Id="EF29" Removed="True" />
+        <ColumnInfo Id="EF30" Removed="True" />
+        <ColumnInfo Id="EF31" Removed="True" />
+        <ColumnInfo Id="EF32" Removed="True" />
+        <ColumnInfo Id="EF33" Removed="True" />
+        <ColumnInfo Id="EF34U1" Removed="True" />
+        <ColumnInfo Id="EF34U2" Removed="True" />
+        <ColumnInfo Id="EF35" Removed="True" />
+        <ColumnInfo Id="EF36" Removed="True" />
+        <ColumnInfo Id="EF37" Removed="True" />
+        <ColumnInfo Id="EF38" Removed="True" />
+        <ColumnInfo Id="EF39" Removed="True" />
+        <ColumnInfo Id="EF40" Removed="True" />
+        <ColumnInfo Id="EF41" Removed="True" />
+        <ColumnInfo Id="EF42" Removed="True" />
+        <ColumnInfo Id="EF43" Removed="True" />
+        <ColumnInfo Id="EF44" Removed="True" />
+        <ColumnInfo Id="EF45" Removed="True" />
+        <ColumnInfo Id="EF46" Removed="True" />
+        <ColumnInfo Id="EF47" Removed="True" />
+        <ColumnInfo Id="EF48" Removed="True" />
+        <ColumnInfo Id="EF49" Removed="True" />
+        <ColumnInfo Id="EF50U1" Removed="True" />
+        <ColumnInfo Id="EF50U2" Removed="True" />
+        <ColumnInfo Id="EF51" Removed="True" />
+        <ColumnInfo Id="EF52" Removed="True" />
+        <ColumnInfo Id="EF53" Removed="True" />
+        <ColumnInfo Id="EF54" Removed="True" />
+        <ColumnInfo Id="EF55" Removed="True" />
+        <ColumnInfo Id="EF56" Removed="True" />
+        <ColumnInfo Id="EF57" Removed="True" />
+        <ColumnInfo Id="EF58" Removed="True" />
+        <ColumnInfo Id="EF59" Removed="True" />
+        <ColumnInfo Id="EF60" Removed="True" />
+        <ColumnInfo Id="EF61" Removed="True" />
+        <ColumnInfo Id="EF62" Removed="True" />
+        <ColumnInfo Id="EF63" Removed="True" />
+        <ColumnInfo Id="EF64" Removed="True" />
+        <ColumnInfo Id="EF65" Removed="True" />
+        <ColumnInfo Id="EF66" Removed="True" />
+        <ColumnInfo Id="EF67" Removed="True" />
+        <ColumnInfo Id="EF68" Removed="True" />
+        <ColumnInfo Id="EF69" Removed="True" />
+        <ColumnInfo Id="EF70" Removed="True" />
+        <ColumnInfo Id="EF71" Removed="True" />
+        <ColumnInfo Id="EF72" Removed="True" />
+        <ColumnInfo Id="EF73" Removed="True" />
+        <ColumnInfo Id="EF74" Removed="True" />
+        <ColumnInfo Id="EF75" Removed="True" />
+        <ColumnInfo Id="EF76" Removed="True" />
+        <ColumnInfo Id="EF77" Removed="True" />
+        <ColumnInfo Id="EF78" Removed="True" />
+        <ColumnInfo Id="EF79" Removed="True" />
+        <ColumnInfo Id="EF80" Removed="True" />
+        <ColumnInfo Id="EF81" Removed="True" />
+        <ColumnInfo Id="EF82" Removed="True" />
+        <ColumnInfo Id="EF83" Removed="True" />
+        <ColumnInfo Id="EF84" Removed="True" />
+        <ColumnInfo Id="EF85" Removed="True" />
+        <ColumnInfo Id="EF86" Removed="True" />
+        <ColumnInfo Id="EF87" Removed="True" />
+        <ColumnInfo Id="EF88" Removed="True" />
+        <ColumnInfo Id="EF89" Removed="True" />
+        <ColumnInfo Id="EF9" Removed="True" />
+        <ColumnInfo Id="EF90" Removed="True" />
+        <ColumnInfo Id="EF91" Removed="True" />
+        <ColumnInfo Id="EF92" Removed="True" />
+        <ColumnInfo Id="EF93" Removed="True" />
+        <ColumnInfo Id="EF94" Removed="True" />
+        <ColumnInfo Id="EF95" Removed="True" />
+        <ColumnInfo Id="EF96" Removed="True" />
+        <ColumnInfo Id="EF97" Removed="True" />
+        <ColumnInfo Id="EF98" Removed="True" />
+        <ColumnInfo Id="EF99" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Erhebungsdaten_DetailView">
+      <Items>
+        <PropertyEditor Id="Oid" PropertyName="Oid" IsNewNode="True" Removed="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <TabbedGroup Id="Item16" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="Item15" ShowCaption="True" Caption="EF1 - EF59" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+                <TabbedGroup Id="Item6" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutGroup Id="Item1" ShowCaption="True" Caption="Basisdaten (EF1-EF16)" CaptionLocation="Top" Direction="Vertical" Index="0" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="Erhebung" ViewItem="Erhebung" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                    <LayoutGroup Id="Auto738d5477-11e8-4d57-8014-36f5272d9bc6" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="96.144578313253" IsNewNode="True">
+                      <LayoutGroup Id="Auto3868d0cf-7a0c-42cf-a7a4-2c7a541ea00b" ShowCaption="False" Caption="" Index="0" RelativeSize="49.904640813731724" IsNewNode="True">
+                        <LayoutItem Id="EF1" ViewItem="EF1" Index="0" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF3" ViewItem="EF3" Index="1" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF5" ViewItem="EF5" Index="2" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF7" ViewItem="EF7" Index="3" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF9" ViewItem="EF9" Index="4" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF11" ViewItem="EF11" Index="5" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF13" ViewItem="EF13" Index="6" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF15" ViewItem="EF15" Index="7" RelativeSize="78.94736842105263" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto43705958-3920-4a2b-8745-3074b3790c81" ShowCaption="False" Caption="" Index="1" RelativeSize="50.095359186268276" IsNewNode="True">
+                        <LayoutItem Id="EF2" ViewItem="EF2" Index="0" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF4" ViewItem="EF4" Index="1" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF6" ViewItem="EF6" Index="2" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF8" ViewItem="EF8" Index="3" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF10" ViewItem="EF10" Index="4" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF12" ViewItem="EF12" Index="5" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF14" ViewItem="EF14" Index="6" RelativeSize="3.007518796992481" IsNewNode="True" />
+                        <LayoutItem Id="EF16" ViewItem="EF16" Index="7" RelativeSize="78.94736842105263" IsNewNode="True" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item4" ShowCaption="True" Caption="Ersteinschreibung / Hochschulsemester (EF17 - EF25)" CaptionLocation="Top" Index="1" RelativeSize="100" Direction="Horizontal" IsNewNode="True">
+                    <LayoutGroup Id="Autodc7cb18c-9ddd-4b55-ad13-a0a62bb2afa0" ShowCaption="False" Caption="" Index="0" RelativeSize="49.904640813731724" IsNewNode="True">
+                      <LayoutItem Id="EF17" ViewItem="EF17" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF19" ViewItem="EF19" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF21" ViewItem="EF21" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF23" ViewItem="EF23" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF25" ViewItem="EF25" Index="4" RelativeSize="87.46987951807229" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto297a0421-b3e0-46d7-ba8f-a2ade2f40ead" ShowCaption="False" Caption="" Index="1" RelativeSize="50.095359186268276" IsNewNode="True">
+                      <LayoutItem Id="EF18" ViewItem="EF18" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF20" ViewItem="EF20" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF22" ViewItem="EF22" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF24" ViewItem="EF24" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="Item3" Index="4" RelativeSize="87.46987951807229" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item7" ShowCaption="True" Caption="Studienunterbrechnung (EF26 - EF27)" CaptionLocation="Top" Index="2" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="EF26" ViewItem="EF26" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                    <LayoutItem Id="EF27" ViewItem="EF27" Index="1" RelativeSize="96.144578313253" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item9" ShowCaption="True" Caption="1. Studiengang an der Hochschule (EF28 - EF43)" CaptionLocation="Top" Direction="Horizontal" Index="3" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto8413fb41-769a-4d77-8834-0227996ddba5" ShowCaption="False" Caption="" Index="0" RelativeSize="49.904640813731724" IsNewNode="True">
+                      <LayoutItem Id="EF28" ViewItem="EF28" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF30" ViewItem="EF30" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF32" ViewItem="EF32" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF34" ViewItem="EF34" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF36" ViewItem="EF36" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF38" ViewItem="EF38" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF40" ViewItem="EF40" Index="6" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF42" ViewItem="EF42" Index="7" RelativeSize="78.795180722891573" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto6820dcea-a844-4ecc-ba1f-e67fdd3a9fab" ShowCaption="False" Caption="" Index="1" RelativeSize="50.095359186268276" IsNewNode="True">
+                      <LayoutItem Id="EF29" ViewItem="EF29" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF31" ViewItem="EF31" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF33" ViewItem="EF33" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF35" ViewItem="EF35" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF37" ViewItem="EF37" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF39" ViewItem="EF39" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF41" ViewItem="EF41" Index="6" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF43" ViewItem="EF43" Index="7" RelativeSize="78.795180722891573" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item11" ShowCaption="True" Caption="2. Studiengang an der Hochschulen (EF44 - EF59)" CaptionLocation="Top" Direction="Horizontal" Index="4" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Autof75c3c1f-76c6-4374-8315-b30d510603ec" ShowCaption="False" Caption="" Index="0" RelativeSize="49.904640813731724" IsNewNode="True">
+                      <LayoutItem Id="EF44" ViewItem="EF44" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF46" ViewItem="EF46" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF48" ViewItem="EF48" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF50" ViewItem="EF50" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF52" ViewItem="EF52" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF54" ViewItem="EF54" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF56" ViewItem="EF56" Index="6" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF58" ViewItem="EF58" Index="7" RelativeSize="78.795180722891573" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto77201bed-a8a1-41af-858c-15d45733aa43" ShowCaption="False" Caption="" Index="1" RelativeSize="50.095359186268276" IsNewNode="True">
+                      <LayoutItem Id="EF45" ViewItem="EF45" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF47" ViewItem="EF47" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF49" ViewItem="EF49" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF51" ViewItem="EF51" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF53" ViewItem="EF53" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF55" ViewItem="EF55" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF57" ViewItem="EF57" Index="6" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF59" ViewItem="EF59" Index="7" RelativeSize="78.795180722891573" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item17" ShowCaption="True" Caption="EF60 - EF102)" CaptionLocation="Top" Index="1" RelativeSize="100" IsNewNode="True">
+                <TabbedGroup Id="Item8" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutGroup Id="Item13" ShowCaption="True" Caption="Ersteinschreibung an einer anderen Hochschule (EF60 - EF68)" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto807be63a-a08f-41f4-a827-93b9093e99f8" ShowCaption="False" Caption="" Index="0" RelativeSize="49.904640813731724" IsNewNode="True">
+                      <LayoutItem Id="EF60" ViewItem="EF60" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF62" ViewItem="EF62" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF63" ViewItem="EF63" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF65" ViewItem="EF65" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF68" ViewItem="EF68" Index="4" RelativeSize="87.46987951807229" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto6a0bc4b6-532c-4c40-9286-b993c04cc6ef" ShowCaption="False" Caption="" Index="1" RelativeSize="50.095359186268276" IsNewNode="True">
+                      <LayoutItem Id="EF61" ViewItem="EF61" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF64" ViewItem="EF64" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF66" ViewItem="EF66" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF67" ViewItem="EF67" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="Item19" Index="4" RelativeSize="87.46987951807229" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item2" ShowCaption="True" Caption="Studium im vorherigen Semester (EF69 - EF70)" CaptionLocation="Top" Direction="Horizontal" Index="1" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="EF69" ViewItem="EF69" Index="0" RelativeSize="49.904640813731724" IsNewNode="True" />
+                    <LayoutItem Id="EF70" ViewItem="EF70" Index="1" RelativeSize="50.095359186268276" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item10" ShowCaption="True" Caption="1. Studiengang (EF71 - EF79)" CaptionLocation="Top" Direction="Horizontal" Index="2" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Autob79fe8f9-fa48-40bb-970c-55f0b4ded18d" ShowCaption="False" Caption="" Index="0" RelativeSize="49.904640813731724" IsNewNode="True">
+                      <LayoutItem Id="EF71" ViewItem="EF71" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF73" ViewItem="EF73" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF75" ViewItem="EF75" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF77" ViewItem="EF77" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF79" ViewItem="EF79" Index="4" RelativeSize="87.46987951807229" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto82badf5e-7d1f-4e2c-8281-75c10d958720" ShowCaption="False" Caption="" Index="1" RelativeSize="50.095359186268276" IsNewNode="True">
+                      <LayoutItem Id="EF72" ViewItem="EF72" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF74" ViewItem="EF74" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF76" ViewItem="EF76" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF78" ViewItem="EF78" Index="3" RelativeSize="90.361445783132524" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item14" ShowCaption="True" Caption="1. Studiengang (EF80 - EF88)" CaptionLocation="Top" Direction="Horizontal" Index="3" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto9ee13de8-b84b-476d-86f8-d611370a1c21" ShowCaption="False" Caption="" Index="0" RelativeSize="49.904640813731724" IsNewNode="True">
+                      <LayoutItem Id="EF80" ViewItem="EF80" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF82" ViewItem="EF82" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF84" ViewItem="EF84" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF86" ViewItem="EF86" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF88" ViewItem="EF88" Index="4" RelativeSize="87.46987951807229" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto6ea625ea-fb03-457b-abb3-1da308ce3a09" ShowCaption="False" Caption="" Index="1" RelativeSize="50.095359186268276" IsNewNode="True">
+                      <LayoutItem Id="EF81" ViewItem="EF81" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF83" ViewItem="EF83" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF85" ViewItem="EF85" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF87" ViewItem="EF87" Index="3" RelativeSize="90.361445783132524" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item20" ShowCaption="True" Caption="Bereits vor Berichtssemester abgelegte Prüfungen (EF89 - EF102)" CaptionLocation="Top" Direction="Horizontal" Index="4" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Autodb5b9e04-796c-481f-956c-781fc271d031" ShowCaption="False" Caption="" Index="0" RelativeSize="49.904640813731724" IsNewNode="True">
+                      <LayoutItem Id="EF89" ViewItem="EF89" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF91" ViewItem="EF91" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF93" ViewItem="EF93" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF95" ViewItem="EF95" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF97" ViewItem="EF97" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF99" ViewItem="EF99" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF101" ViewItem="EF101" Index="6" RelativeSize="81.6867469879518" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto39faed4a-ec85-4e3e-a2ea-624d97b5c7e3" ShowCaption="False" Caption="" Index="1" RelativeSize="50.095359186268276" IsNewNode="True">
+                      <LayoutItem Id="EF90" ViewItem="EF90" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF92" ViewItem="EF92" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF94" ViewItem="EF94" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF96" ViewItem="EF96" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF98" ViewItem="EF98" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF100" ViewItem="EF100" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF102" ViewItem="EF102" Index="6" RelativeSize="81.6867469879518" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item24" ShowCaption="True" Caption="EF103 - EF138)" CaptionLocation="Top" Index="2" RelativeSize="100" IsNewNode="True">
+                <TabbedGroup Id="Item26" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutGroup Id="Item22" ShowCaption="True" Caption="ggfls. Vorletzte Prüfung (EF103 - EF116)" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto30fe7ab3-676d-4612-a5e4-ba2bce02d1e0" ShowCaption="False" Caption="" Index="0" RelativeSize="49.904640813731724" IsNewNode="True">
+                      <LayoutItem Id="EF103" ViewItem="EF103" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF105" ViewItem="EF105" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF107" ViewItem="EF107" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF109" ViewItem="EF109" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF111" ViewItem="EF111" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF113" ViewItem="EF113" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF115" ViewItem="EF115" Index="6" RelativeSize="81.6867469879518" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autoadfb23cd-fb9a-4253-82e5-0b7e8f5596c6" ShowCaption="False" Caption="" Index="1" RelativeSize="50.095359186268276" IsNewNode="True">
+                      <LayoutItem Id="EF104" ViewItem="EF104" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF106" ViewItem="EF106" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF108" ViewItem="EF108" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF110" ViewItem="EF110" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF112" ViewItem="EF112" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF114" ViewItem="EF114" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF116" ViewItem="EF116" Index="6" RelativeSize="81.6867469879518" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item27" ShowCaption="True" Caption="Hochschulzugangsberechtigung (EF117 - EF121)" CaptionLocation="Top" Index="1" RelativeSize="100" Direction="Horizontal" IsNewNode="True">
+                    <LayoutGroup Id="Auto757f07bf-4aa8-4cb8-a1f0-ca71cddd19e6" ShowCaption="False" Caption="" Index="0" RelativeSize="49.968213604577244" IsNewNode="True">
+                      <LayoutItem Id="EF117" ViewItem="EF117" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF119" ViewItem="EF119" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF121" ViewItem="EF121" Index="2" RelativeSize="93.253012048192772" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autoe519bde8-dd67-4f67-ae22-00cb0ac52412" ShowCaption="False" Caption="" Index="1" RelativeSize="50.031786395422756" IsNewNode="True">
+                      <LayoutItem Id="EF118" ViewItem="EF118" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF120" ViewItem="EF120" Index="1" RelativeSize="96.144578313253" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item29" ShowCaption="True" Caption="Berufspraktische Tätigkeit vor dem Studium (EF122 - EF125)" CaptionLocation="Top" Direction="Horizontal" Index="2" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Autod82c6d6d-92bd-47ce-9496-3f4698a7a617" ShowCaption="False" Caption="" Index="0" RelativeSize="49.968213604577244" IsNewNode="True">
+                      <LayoutItem Id="EF122" ViewItem="EF122" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF124" ViewItem="EF124" Index="1" RelativeSize="96.144578313253" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto1458a556-9869-46cc-a798-4aa5893b067d" ShowCaption="False" Caption="" Index="1" RelativeSize="50.031786395422756" IsNewNode="True">
+                      <LayoutItem Id="EF123" ViewItem="EF123" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF125" ViewItem="EF125" Index="1" RelativeSize="96.144578313253" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item5" ShowCaption="True" Caption="Seit der letzten Semestermeldung abgschlossene Prüfungen (EF126 - EF138)" CaptionLocation="Top" Direction="Horizontal" Index="3" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto64f26c9d-580d-47ee-834d-1450f6e8f239" ShowCaption="False" Caption="" Index="0" RelativeSize="49.968213604577244" IsNewNode="True">
+                      <LayoutItem Id="EF126" ViewItem="EF126" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF128" ViewItem="EF128" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF130" ViewItem="EF130" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF132" ViewItem="EF132" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF134" ViewItem="EF134" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF136" ViewItem="EF136" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF138" ViewItem="EF138" Index="6" RelativeSize="81.6867469879518" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto8b507148-c946-4e05-a3f3-833c173aa0d6" ShowCaption="False" Caption="" Index="1" RelativeSize="50.031786395422756" IsNewNode="True">
+                      <LayoutItem Id="EF127" ViewItem="EF127" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF129" ViewItem="EF129" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF131" ViewItem="EF131" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF133" ViewItem="EF133" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF135" ViewItem="EF135" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF137" ViewItem="EF137" Index="5" RelativeSize="84.578313253012041" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item23" ShowCaption="True" Caption="EF139 - EF177" CaptionLocation="Top" Index="3" RelativeSize="100" IsNewNode="True">
+                <TabbedGroup Id="Item21" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutGroup Id="Item18" ShowCaption="True" Caption="Zweiter Studienbezogener Auslandsaufenthalt (EF139 - EF142)" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto976dfb35-7535-4be7-b009-b135f8152996" ShowCaption="False" Caption="" Index="0" RelativeSize="49.968213604577244" IsNewNode="True">
+                      <LayoutItem Id="EF139" ViewItem="EF139" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF141" ViewItem="EF141" Index="1" RelativeSize="96.144578313253" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto0a204034-93bb-423b-91cd-2eba6879ff3f" ShowCaption="False" Caption="" Index="1" RelativeSize="50.031786395422756" IsNewNode="True">
+                      <LayoutItem Id="EF140" ViewItem="EF140" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF142" ViewItem="EF142" Index="1" RelativeSize="96.144578313253" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item28" ShowCaption="True" Caption="Dritter Studienbezogener Auslandsaufenthalt (EF143 - EF146)" CaptionLocation="Top" Direction="Horizontal" Index="1" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto58e19210-ffc8-4a31-9f03-b3483550e086" ShowCaption="False" Caption="" Index="0" RelativeSize="49.968213604577244" IsNewNode="True">
+                      <LayoutItem Id="EF143" ViewItem="EF143" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF145" ViewItem="EF145" Index="1" RelativeSize="96.144578313253" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autod2f0c7e5-8484-48f8-a107-23eeb8c66039" ShowCaption="False" Caption="" Index="1" RelativeSize="50.031786395422756" IsNewNode="True">
+                      <LayoutItem Id="EF144" ViewItem="EF144" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF146" ViewItem="EF146" Index="1" RelativeSize="96.144578313253" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item31" ShowCaption="True" Caption="Seit der letzten Semestermeldung abgschlossene Prüfungen (EF147 - EF160)" CaptionLocation="Top" Direction="Horizontal" Index="2" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto46ca68f7-270a-4e4f-ae4b-38d65415776c" ShowCaption="False" Caption="" Index="0" RelativeSize="49.968213604577244" IsNewNode="True">
+                      <LayoutItem Id="EF147" ViewItem="EF147" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF149" ViewItem="EF149" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF151" ViewItem="EF151" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF153" ViewItem="EF153" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF155" ViewItem="EF155" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF157" ViewItem="EF157" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF159" ViewItem="EF159" Index="6" RelativeSize="81.6867469879518" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto7bbeb1ab-7e39-4370-b126-c7ab088d0b7d" ShowCaption="False" Caption="" Index="1" RelativeSize="50.031786395422756" IsNewNode="True">
+                      <LayoutItem Id="EF148" ViewItem="EF148" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF150" ViewItem="EF150" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF152" ViewItem="EF152" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF154" ViewItem="EF154" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF156" ViewItem="EF156" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF158" ViewItem="EF158" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF160" ViewItem="EF160" Index="6" RelativeSize="81.6867469879518" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item33" ShowCaption="True" Caption="Seit der letzten Semestermeldung abgschlossene 2. Prüfungen (EF161 - EF171)" CaptionLocation="Top" Index="3" RelativeSize="100" Direction="Horizontal" IsNewNode="True">
+                    <LayoutGroup Id="Auto8ec5f8d6-d132-4b34-9229-a0bb9497c298" ShowCaption="False" Caption="" Index="0" RelativeSize="49.968213604577244" IsNewNode="True">
+                      <LayoutItem Id="EF161" ViewItem="EF161" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF163" ViewItem="EF163" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF165" ViewItem="EF165" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF167" ViewItem="EF167" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF169" ViewItem="EF169" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF171" ViewItem="EF171" Index="5" RelativeSize="84.578313253012041" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto047f33eb-6221-4265-b10c-dc83ce934ce0" ShowCaption="False" Caption="" Index="1" RelativeSize="50.031786395422756" IsNewNode="True">
+                      <LayoutItem Id="EF162" ViewItem="EF162" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF164" ViewItem="EF164" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF166" ViewItem="EF166" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF168" ViewItem="EF168" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF170" ViewItem="EF170" Index="4" RelativeSize="87.46987951807229" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item37" ShowCaption="True" Caption="EF178 - EF199" CaptionLocation="Top" Index="4" RelativeSize="100" IsNewNode="True">
+                <TabbedGroup Id="Item36" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutGroup Id="Item35" ShowCaption="True" Caption="Studienbezogene Auslandsaufenthalte 2. Prüfung - 1. Auslandsaufenthalt (EF172 - EF183)" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto03e50ee9-b849-4fec-919c-55bd20538c81" ShowCaption="False" Caption="" Index="0" RelativeSize="50.731087094723456" IsNewNode="True">
+                      <LayoutItem Id="EF172" ViewItem="EF172" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF174" ViewItem="EF174" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF176" ViewItem="EF176" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF178" ViewItem="EF178" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF180" ViewItem="EF180" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF182" ViewItem="EF182" Index="5" RelativeSize="84.578313253012041" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autoce353084-4278-4871-b744-d4b31cf28345" ShowCaption="False" Caption="" Index="1" RelativeSize="49.268912905276544" IsNewNode="True">
+                      <LayoutItem Id="EF173" ViewItem="EF173" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF175" ViewItem="EF175" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF177" ViewItem="EF177" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF179" ViewItem="EF179" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF181" ViewItem="EF181" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF183" ViewItem="EF183" Index="5" RelativeSize="84.578313253012041" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item40" ShowCaption="True" Caption="Seit der letzten Semestermeldung abgschlossene 2. Prüfungen (EF184 - EF199)" CaptionLocation="Top" Direction="Horizontal" Index="1" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Auto377a74a1-a81f-49f3-886a-c9c6a59ee644" ShowCaption="False" Caption="" Index="0" RelativeSize="49.968213604577244" IsNewNode="True">
+                      <LayoutItem Id="EF184" ViewItem="EF184" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF186" ViewItem="EF186" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF188" ViewItem="EF188" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF190" ViewItem="EF190" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF192" ViewItem="EF192" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF194" ViewItem="EF194" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF196" ViewItem="EF196" Index="6" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF198" ViewItem="EF198" Index="7" RelativeSize="78.795180722891573" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto5f0ab08b-c49b-4a4b-9ae3-9d45b2c19063" ShowCaption="False" Caption="" Index="1" RelativeSize="50.031786395422756" IsNewNode="True">
+                      <LayoutItem Id="EF185" ViewItem="EF185" Index="0" RelativeSize="3.8554216867469879" IsNewNode="True" />
+                      <LayoutItem Id="EF187" ViewItem="EF187" Index="1" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF189" ViewItem="EF189" Index="2" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF191" ViewItem="EF191" Index="3" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF193" ViewItem="EF193" Index="4" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF195" ViewItem="EF195" Index="5" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF197" ViewItem="EF197" Index="6" RelativeSize="2.8915662650602409" IsNewNode="True" />
+                      <LayoutItem Id="EF199" ViewItem="EF199" Index="7" RelativeSize="78.795180722891573" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="Erhebungsdaten" RelativeSize="46.365638766519822" Index="1" Direction="Horizontal" Removed="True">
+              <LayoutGroup Id="Erhebungsdaten_col2" RelativeSize="100" Index="0" Caption="Erhebungsdaten_col2" Removed="True">
+                <LayoutItem Id="EF101" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF102" RelativeSize="1.3377926421404682" Index="0" Removed="True" />
+                <LayoutItem Id="EF103" RelativeSize="1.3513513513513513" Index="0" Removed="True" />
+                <LayoutItem Id="EF118" RelativeSize="1.5944195316392626" Index="0" Removed="True" />
+                <LayoutItem Id="EF119" RelativeSize="1.6129032258064515" Index="0" Removed="True" />
+                <LayoutItem Id="EF120" RelativeSize="1.6326530612244898" Index="0" Removed="True" />
+                <LayoutItem Id="EF121" RelativeSize="1.6528925619834711" Index="0" Removed="True" />
+                <LayoutItem Id="EF122" RelativeSize="1.6736401673640167" Index="0" Removed="True" />
+                <LayoutItem Id="EF126" RelativeSize="1.674515960230246" Index="0" Removed="True" />
+                <LayoutItem Id="EF132" RelativeSize="1.7867113344500278" Index="0" Removed="True" />
+                <LayoutItem Id="EF133" RelativeSize="1.941747572815534" Index="0" Removed="True" />
+                <LayoutItem Id="EF134" RelativeSize="1.9704433497536946" Index="0" Removed="True" />
+                <LayoutItem Id="EF135" RelativeSize="2" Index="0" Removed="True" />
+                <LayoutItem Id="EF136" RelativeSize="2.030456852791878" Index="0" Removed="True" />
+                <LayoutItem Id="EF137" RelativeSize="2.0618556701030926" Index="0" Removed="True" />
+                <LayoutItem Id="EF138" RelativeSize="2.0942408376963351" Index="0" Removed="True" />
+                <LayoutItem Id="EF139" RelativeSize="2.1276595744680851" Index="0" Removed="True" />
+                <LayoutItem Id="EF144" RelativeSize="2.0860495436766624" Index="0" Removed="True" />
+                <LayoutItem Id="EF145" RelativeSize="2.3529411764705883" Index="0" Removed="True" />
+                <LayoutItem Id="EF146" RelativeSize="2.3952095808383231" Index="0" Removed="True" />
+                <LayoutItem Id="EF147" RelativeSize="2.4390243902439024" Index="0" Removed="True" />
+                <LayoutItem Id="EF161" RelativeSize="2.6868178001679262" Index="0" Removed="True" />
+                <LayoutItem Id="EF171" RelativeSize="4.1720990873533248" Index="0" Removed="True" />
+                <LayoutItem Id="EF172" RelativeSize="4.49438202247191" Index="0" Removed="True" />
+                <LayoutItem Id="EF185" RelativeSize="5.0235478806907379" Index="0" Removed="True" />
+                <LayoutItem Id="EF186" RelativeSize="5.7553956834532372" Index="0" Removed="True" />
+                <LayoutItem Id="EF187" RelativeSize="6.0150375939849621" Index="0" Removed="True" />
+                <LayoutItem Id="EF188" RelativeSize="6.0150375939849621" Index="0" Removed="True" />
+                <LayoutItem Id="EF189" RelativeSize="6.2992125984251972" Index="0" Removed="True" />
+                <LayoutItem Id="EF190" RelativeSize="6.2992125984251972" Index="0" Removed="True" />
+                <LayoutItem Id="EF191" RelativeSize="6.6115702479338845" Index="0" Removed="True" />
+                <LayoutItem Id="EF192" RelativeSize="6.6115702479338845" Index="0" Removed="True" />
+                <LayoutItem Id="EF193" RelativeSize="6.9565217391304346" Index="0" Removed="True" />
+                <LayoutItem Id="EF194" RelativeSize="6.9565217391304346" Index="0" Removed="True" />
+                <LayoutItem Id="EF195" RelativeSize="7.3394495412844041" Index="0" Removed="True" />
+                <LayoutItem Id="EF196" RelativeSize="7.766990291262136" Index="0" Removed="True" />
+                <LayoutItem Id="EF197" RelativeSize="7.766990291262136" Index="0" Removed="True" />
+                <LayoutItem Id="EF198" RelativeSize="7.766990291262136" Index="0" Removed="True" />
+                <LayoutItem Id="EF199" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="EF104" RelativeSize="1.0105263157894737" Index="1" Removed="True" />
+                <LayoutItem Id="EF105" RelativeSize="1.0105263157894737" Index="1" Removed="True" />
+                <LayoutItem Id="EF106" RelativeSize="1.0139416983523448" Index="1" Removed="True" />
+                <LayoutItem Id="EF107" RelativeSize="1.0139416983523448" Index="1" Removed="True" />
+                <LayoutItem Id="EF108" RelativeSize="1.0243277848911652" Index="1" Removed="True" />
+                <LayoutItem Id="EF109" RelativeSize="1.0243277848911652" Index="1" Removed="True" />
+                <LayoutItem Id="EF110" RelativeSize="1.0349288486416559" Index="1" Removed="True" />
+                <LayoutItem Id="EF111" RelativeSize="1.0349288486416559" Index="1" Removed="True" />
+                <LayoutItem Id="EF112" RelativeSize="1.0457516339869282" Index="1" Removed="True" />
+                <LayoutItem Id="EF113" RelativeSize="1.0457516339869282" Index="1" Removed="True" />
+                <LayoutItem Id="EF114" RelativeSize="1.0568031704095113" Index="1" Removed="True" />
+                <LayoutItem Id="EF115" RelativeSize="1.0568031704095113" Index="1" Removed="True" />
+                <LayoutItem Id="EF116" RelativeSize="1.0680907877169559" Index="1" Removed="True" />
+                <LayoutItem Id="EF117" RelativeSize="1.0680907877169559" Index="1" Removed="True" />
+                <LayoutItem Id="EF123" RelativeSize="1.2506513809275663" Index="1" Removed="True" />
+                <LayoutItem Id="EF124" RelativeSize="1.2506513809275663" Index="1" Removed="True" />
+                <LayoutItem Id="EF125" RelativeSize="1.2558869701726845" Index="1" Removed="True" />
+                <LayoutItem Id="EF127" RelativeSize="1.2558869701726845" Index="1" Removed="True" />
+                <LayoutItem Id="EF128" RelativeSize="1.3165112452002194" Index="1" Removed="True" />
+                <LayoutItem Id="EF129" RelativeSize="1.3223140495867769" Index="1" Removed="True" />
+                <LayoutItem Id="EF130" RelativeSize="1.3223140495867769" Index="1" Removed="True" />
+                <LayoutItem Id="EF131" RelativeSize="1.340033500837521" Index="1" Removed="True" />
+                <LayoutItem Id="EF140" RelativeSize="1.5883520847121111" Index="1" Removed="True" />
+                <LayoutItem Id="EF141" RelativeSize="1.5883520847121111" Index="1" Removed="True" />
+                <LayoutItem Id="EF142" RelativeSize="1.5968063872255489" Index="1" Removed="True" />
+                <LayoutItem Id="EF143" RelativeSize="1.5968063872255489" Index="1" Removed="True" />
+                <LayoutItem Id="EF148" RelativeSize="1.819560272934041" Index="1" Removed="True" />
+                <LayoutItem Id="EF149" RelativeSize="1.819560272934041" Index="1" Removed="True" />
+                <LayoutItem Id="EF150" RelativeSize="1.8306636155606408" Index="1" Removed="True" />
+                <LayoutItem Id="EF151" RelativeSize="1.8306636155606408" Index="1" Removed="True" />
+                <LayoutItem Id="EF152" RelativeSize="1.8648018648018647" Index="1" Removed="True" />
+                <LayoutItem Id="EF153" RelativeSize="1.8648018648018647" Index="1" Removed="True" />
+                <LayoutItem Id="EF154" RelativeSize="1.9002375296912113" Index="1" Removed="True" />
+                <LayoutItem Id="EF155" RelativeSize="1.9002375296912113" Index="1" Removed="True" />
+                <LayoutItem Id="EF156" RelativeSize="1.937046004842615" Index="1" Removed="True" />
+                <LayoutItem Id="EF157" RelativeSize="1.937046004842615" Index="1" Removed="True" />
+                <LayoutItem Id="EF158" RelativeSize="1.9753086419753085" Index="1" Removed="True" />
+                <LayoutItem Id="EF159" RelativeSize="1.9753086419753085" Index="1" Removed="True" />
+                <LayoutItem Id="EF160" RelativeSize="2.0151133501259446" Index="1" Removed="True" />
+                <LayoutItem Id="EF162" RelativeSize="2.0151133501259446" Index="1" Removed="True" />
+                <LayoutItem Id="EF163" RelativeSize="2.502606882168926" Index="1" Removed="True" />
+                <LayoutItem Id="EF164" RelativeSize="2.5668449197860963" Index="1" Removed="True" />
+                <LayoutItem Id="EF165" RelativeSize="2.6344676180021955" Index="1" Removed="True" />
+                <LayoutItem Id="EF166" RelativeSize="2.705749718151071" Index="1" Removed="True" />
+                <LayoutItem Id="EF167" RelativeSize="2.7809965237543453" Index="1" Removed="True" />
+                <LayoutItem Id="EF168" RelativeSize="2.8605482717520858" Index="1" Removed="True" />
+                <LayoutItem Id="EF169" RelativeSize="2.9447852760736195" Index="1" Removed="True" />
+                <LayoutItem Id="EF170" RelativeSize="3.0341340075853349" Index="1" Removed="True" />
+                <LayoutItem Id="EF173" RelativeSize="3.3379694019471486" Index="1" Removed="True" />
+                <LayoutItem Id="EF174" RelativeSize="3.3379694019471486" Index="1" Removed="True" />
+                <LayoutItem Id="EF175" RelativeSize="3.3755274261603376" Index="1" Removed="True" />
+                <LayoutItem Id="EF176" RelativeSize="3.3755274261603376" Index="1" Removed="True" />
+                <LayoutItem Id="EF177" RelativeSize="3.4934497816593888" Index="1" Removed="True" />
+                <LayoutItem Id="EF178" RelativeSize="3.4934497816593888" Index="1" Removed="True" />
+                <LayoutItem Id="EF179" RelativeSize="3.6199095022624435" Index="1" Removed="True" />
+                <LayoutItem Id="EF180" RelativeSize="3.6199095022624435" Index="1" Removed="True" />
+                <LayoutItem Id="EF181" RelativeSize="3.755868544600939" Index="1" Removed="True" />
+                <LayoutItem Id="EF182" RelativeSize="3.755868544600939" Index="1" Removed="True" />
+                <LayoutItem Id="EF183" RelativeSize="3.9024390243902438" Index="1" Removed="True" />
+                <LayoutItem Id="EF184" RelativeSize="3.9024390243902438" Index="1" Removed="True" />
+                <LayoutItem Id="EF100" RelativeSize="1.3245033112582782" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Erhebungsdaten_col1" RelativeSize="48.786610878661087" Removed="True">
+                <LayoutItem Id="EF1" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF10" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF11" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF12" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF13" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF14" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF15" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF16" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF17" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF18" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF19" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF2" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF20" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF21" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF22" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF23" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF24" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF25" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF26" ViewItem="EF26" Index="0" RelativeSize="1.3114754098360655" Removed="True" />
+                <LayoutItem Id="EF28" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF3" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF4" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF44" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF5" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF6" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF60" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF62" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF63" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF64" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF65" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF66" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF67" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF68" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF69" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF7" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF71" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF8" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF80" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF89" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF9" RelativeSize="1.3245033112582782" Index="0" Removed="True" />
+                <LayoutItem Id="EF27" RelativeSize="0.98360655737704916" Index="1" Removed="True" />
+                <LayoutItem Id="EF29" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF30" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF31" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF32" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF33" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF34" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF35" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF36" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF37" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF38" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF39" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF40" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF41" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF42" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF43" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF45" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF46" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF47" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF48" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF49" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF50" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF51" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF52" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF53" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF54" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF55" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF56" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF57" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF58" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF59" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF61" ViewItem="EF61" Index="1" RelativeSize="0.99337748344370858" Removed="True" />
+                <LayoutItem Id="EF70" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF72" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF73" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF74" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF75" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF76" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF77" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF78" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF79" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF81" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF82" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF83" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF84" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF85" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF86" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF87" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF88" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF90" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF91" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF92" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF93" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF94" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF95" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF96" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF97" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF98" RelativeSize="0.99337748344370858" Index="1" Removed="True" />
+                <LayoutItem Id="EF99" RelativeSize="92.756622516556291" Index="1" Removed="True" />
+                <LayoutItem Id="Erhebung" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Erhebungsdaten_ListView">
+      <Columns>
+        <ColumnInfo Id="EF10" Removed="True" />
+        <ColumnInfo Id="EF100" Removed="True" />
+        <ColumnInfo Id="EF101" Removed="True" />
+        <ColumnInfo Id="EF102" Removed="True" />
+        <ColumnInfo Id="EF103" Removed="True" />
+        <ColumnInfo Id="EF104" Removed="True" />
+        <ColumnInfo Id="EF105" Removed="True" />
+        <ColumnInfo Id="EF106" Removed="True" />
+        <ColumnInfo Id="EF107" Removed="True" />
+        <ColumnInfo Id="EF108" Removed="True" />
+        <ColumnInfo Id="EF109" Removed="True" />
+        <ColumnInfo Id="EF11" Removed="True" />
+        <ColumnInfo Id="EF110" Removed="True" />
+        <ColumnInfo Id="EF111" Removed="True" />
+        <ColumnInfo Id="EF112" Removed="True" />
+        <ColumnInfo Id="EF113" Removed="True" />
+        <ColumnInfo Id="EF114" Removed="True" />
+        <ColumnInfo Id="EF115" Removed="True" />
+        <ColumnInfo Id="EF116" Removed="True" />
+        <ColumnInfo Id="EF117" Removed="True" />
+        <ColumnInfo Id="EF118" Removed="True" />
+        <ColumnInfo Id="EF119U1" Removed="True" />
+        <ColumnInfo Id="EF119U2" Removed="True" />
+        <ColumnInfo Id="EF120" Removed="True" />
+        <ColumnInfo Id="EF121" Removed="True" />
+        <ColumnInfo Id="EF122" Removed="True" />
+        <ColumnInfo Id="EF123" Removed="True" />
+        <ColumnInfo Id="EF124" Removed="True" />
+        <ColumnInfo Id="EF125" Removed="True" />
+        <ColumnInfo Id="EF126" Removed="True" />
+        <ColumnInfo Id="EF127" Removed="True" />
+        <ColumnInfo Id="EF128" Removed="True" />
+        <ColumnInfo Id="EF129" Removed="True" />
+        <ColumnInfo Id="EF12U1" Removed="True" />
+        <ColumnInfo Id="EF12U2" Removed="True" />
+        <ColumnInfo Id="EF130" Removed="True" />
+        <ColumnInfo Id="EF131" Removed="True" />
+        <ColumnInfo Id="EF132" Removed="True" />
+        <ColumnInfo Id="EF133" Removed="True" />
+        <ColumnInfo Id="EF134" Removed="True" />
+        <ColumnInfo Id="EF135" Removed="True" />
+        <ColumnInfo Id="EF136" Removed="True" />
+        <ColumnInfo Id="EF137" Removed="True" />
+        <ColumnInfo Id="EF138" Removed="True" />
+        <ColumnInfo Id="EF139" Removed="True" />
+        <ColumnInfo Id="EF13U1" Removed="True" />
+        <ColumnInfo Id="EF13U2" Removed="True" />
+        <ColumnInfo Id="EF14" Removed="True" />
+        <ColumnInfo Id="EF140" Removed="True" />
+        <ColumnInfo Id="EF141" Removed="True" />
+        <ColumnInfo Id="EF142" Removed="True" />
+        <ColumnInfo Id="EF143" Removed="True" />
+        <ColumnInfo Id="EF144" Removed="True" />
+        <ColumnInfo Id="EF145" Removed="True" />
+        <ColumnInfo Id="EF146" Removed="True" />
+        <ColumnInfo Id="EF147" Removed="True" />
+        <ColumnInfo Id="EF148" Removed="True" />
+        <ColumnInfo Id="EF149" Removed="True" />
+        <ColumnInfo Id="EF15" Removed="True" />
+        <ColumnInfo Id="EF150" Removed="True" />
+        <ColumnInfo Id="EF151" Removed="True" />
+        <ColumnInfo Id="EF152" Removed="True" />
+        <ColumnInfo Id="EF153" Removed="True" />
+        <ColumnInfo Id="EF154" Removed="True" />
+        <ColumnInfo Id="EF155" Removed="True" />
+        <ColumnInfo Id="EF156" Removed="True" />
+        <ColumnInfo Id="EF157" Removed="True" />
+        <ColumnInfo Id="EF158" Removed="True" />
+        <ColumnInfo Id="EF159" Removed="True" />
+        <ColumnInfo Id="EF16" Removed="True" />
+        <ColumnInfo Id="EF160" Removed="True" />
+        <ColumnInfo Id="EF161" Removed="True" />
+        <ColumnInfo Id="EF162" Removed="True" />
+        <ColumnInfo Id="EF163" Removed="True" />
+        <ColumnInfo Id="EF164" Removed="True" />
+        <ColumnInfo Id="EF165" Removed="True" />
+        <ColumnInfo Id="EF166" Removed="True" />
+        <ColumnInfo Id="EF167" Removed="True" />
+        <ColumnInfo Id="EF168" Removed="True" />
+        <ColumnInfo Id="EF169" Removed="True" />
+        <ColumnInfo Id="EF17" Removed="True" />
+        <ColumnInfo Id="EF170" Removed="True" />
+        <ColumnInfo Id="EF171" Removed="True" />
+        <ColumnInfo Id="EF172" Removed="True" />
+        <ColumnInfo Id="EF173" Removed="True" />
+        <ColumnInfo Id="EF174" Removed="True" />
+        <ColumnInfo Id="EF175" Removed="True" />
+        <ColumnInfo Id="EF176" Removed="True" />
+        <ColumnInfo Id="EF177" Removed="True" />
+        <ColumnInfo Id="EF178" Removed="True" />
+        <ColumnInfo Id="EF179" Removed="True" />
+        <ColumnInfo Id="EF18" Removed="True" />
+        <ColumnInfo Id="EF180" Removed="True" />
+        <ColumnInfo Id="EF181" Removed="True" />
+        <ColumnInfo Id="EF182" Removed="True" />
+        <ColumnInfo Id="EF183" Removed="True" />
+        <ColumnInfo Id="EF184" Removed="True" />
+        <ColumnInfo Id="EF185" Removed="True" />
+        <ColumnInfo Id="EF186" Removed="True" />
+        <ColumnInfo Id="EF187" Removed="True" />
+        <ColumnInfo Id="EF188" Removed="True" />
+        <ColumnInfo Id="EF189" Removed="True" />
+        <ColumnInfo Id="EF19" Removed="True" />
+        <ColumnInfo Id="EF190" Removed="True" />
+        <ColumnInfo Id="EF191" Removed="True" />
+        <ColumnInfo Id="EF192" Removed="True" />
+        <ColumnInfo Id="EF193" Removed="True" />
+        <ColumnInfo Id="EF194" Removed="True" />
+        <ColumnInfo Id="EF195" Removed="True" />
+        <ColumnInfo Id="EF196" Removed="True" />
+        <ColumnInfo Id="EF197" Removed="True" />
+        <ColumnInfo Id="EF198" Removed="True" />
+        <ColumnInfo Id="EF199" Removed="True" />
+        <ColumnInfo Id="EF20" Removed="True" />
+        <ColumnInfo Id="EF21" Removed="True" />
+        <ColumnInfo Id="EF22" Removed="True" />
+        <ColumnInfo Id="EF23" Removed="True" />
+        <ColumnInfo Id="EF24" Removed="True" />
+        <ColumnInfo Id="EF25" Removed="True" />
+        <ColumnInfo Id="EF26" Removed="True" />
+        <ColumnInfo Id="EF27" Removed="True" />
+        <ColumnInfo Id="EF28" Removed="True" />
+        <ColumnInfo Id="EF29" Removed="True" />
+        <ColumnInfo Id="EF30" Removed="True" />
+        <ColumnInfo Id="EF31" Removed="True" />
+        <ColumnInfo Id="EF32" Removed="True" />
+        <ColumnInfo Id="EF33" Removed="True" />
+        <ColumnInfo Id="EF34U1" Removed="True" />
+        <ColumnInfo Id="EF34U2" Removed="True" />
+        <ColumnInfo Id="EF35" Removed="True" />
+        <ColumnInfo Id="EF36" Removed="True" />
+        <ColumnInfo Id="EF37" Removed="True" />
+        <ColumnInfo Id="EF38" Removed="True" />
+        <ColumnInfo Id="EF39" Removed="True" />
+        <ColumnInfo Id="EF40" Removed="True" />
+        <ColumnInfo Id="EF41" Removed="True" />
+        <ColumnInfo Id="EF42" Removed="True" />
+        <ColumnInfo Id="EF43" Removed="True" />
+        <ColumnInfo Id="EF44" Removed="True" />
+        <ColumnInfo Id="EF45" Removed="True" />
+        <ColumnInfo Id="EF46" Removed="True" />
+        <ColumnInfo Id="EF47" Removed="True" />
+        <ColumnInfo Id="EF48" Removed="True" />
+        <ColumnInfo Id="EF49" Removed="True" />
+        <ColumnInfo Id="EF50U1" Removed="True" />
+        <ColumnInfo Id="EF50U2" Removed="True" />
+        <ColumnInfo Id="EF51" Removed="True" />
+        <ColumnInfo Id="EF52" Removed="True" />
+        <ColumnInfo Id="EF53" Removed="True" />
+        <ColumnInfo Id="EF54" Removed="True" />
+        <ColumnInfo Id="EF55" Removed="True" />
+        <ColumnInfo Id="EF56" Removed="True" />
+        <ColumnInfo Id="EF57" Removed="True" />
+        <ColumnInfo Id="EF58" Removed="True" />
+        <ColumnInfo Id="EF59" Removed="True" />
+        <ColumnInfo Id="EF60" Removed="True" />
+        <ColumnInfo Id="EF61" Removed="True" />
+        <ColumnInfo Id="EF62" Removed="True" />
+        <ColumnInfo Id="EF63" Removed="True" />
+        <ColumnInfo Id="EF64" Removed="True" />
+        <ColumnInfo Id="EF65" Removed="True" />
+        <ColumnInfo Id="EF66" Removed="True" />
+        <ColumnInfo Id="EF67" Removed="True" />
+        <ColumnInfo Id="EF68" Removed="True" />
+        <ColumnInfo Id="EF69" Removed="True" />
+        <ColumnInfo Id="EF70" Removed="True" />
+        <ColumnInfo Id="EF71" Removed="True" />
+        <ColumnInfo Id="EF72" Removed="True" />
+        <ColumnInfo Id="EF73" Removed="True" />
+        <ColumnInfo Id="EF74" Removed="True" />
+        <ColumnInfo Id="EF75" Removed="True" />
+        <ColumnInfo Id="EF76" Removed="True" />
+        <ColumnInfo Id="EF77" Removed="True" />
+        <ColumnInfo Id="EF78" Removed="True" />
+        <ColumnInfo Id="EF79" Removed="True" />
+        <ColumnInfo Id="EF80" Removed="True" />
+        <ColumnInfo Id="EF81" Removed="True" />
+        <ColumnInfo Id="EF82" Removed="True" />
+        <ColumnInfo Id="EF83" Removed="True" />
+        <ColumnInfo Id="EF84" Removed="True" />
+        <ColumnInfo Id="EF85" Removed="True" />
+        <ColumnInfo Id="EF86" Removed="True" />
+        <ColumnInfo Id="EF87" Removed="True" />
+        <ColumnInfo Id="EF88" Removed="True" />
+        <ColumnInfo Id="EF89" Removed="True" />
+        <ColumnInfo Id="EF8U1" Removed="True" />
+        <ColumnInfo Id="EF8U2" Removed="True" />
+        <ColumnInfo Id="EF8U3" Removed="True" />
+        <ColumnInfo Id="EF9" Removed="True" />
+        <ColumnInfo Id="EF90" Removed="True" />
+        <ColumnInfo Id="EF91" Removed="True" />
+        <ColumnInfo Id="EF92" Removed="True" />
+        <ColumnInfo Id="EF93" Removed="True" />
+        <ColumnInfo Id="EF94" Removed="True" />
+        <ColumnInfo Id="EF95" Removed="True" />
+        <ColumnInfo Id="EF96" Removed="True" />
+        <ColumnInfo Id="EF97" Removed="True" />
+        <ColumnInfo Id="EF98" Removed="True" />
+        <ColumnInfo Id="EF99" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="Hochschulen_ListView" NewItemRowPosition="Top" AllowEdit="True" />
+    <ListView Id="HzbArten_ListView" AllowEdit="True" NewItemRowPosition="Top" />
+    <ListView Id="Kreise_ListView" NewItemRowPosition="Top" AllowEdit="True" />
+    <DetailView Id="Staaten_Kreise_DetailView" AllowDelete="False" AllowEdit="False" AllowNew="False" />
+    <ListView Id="Staaten_Kreise_ListView" AllowEdit="True" NewItemRowPosition="None" AllowLink="False" AllowNew="False" AllowUnlink="False" AllowDelete="False" />
+    <ListView Id="Staaten_ListView" AllowEdit="True" NewItemRowPosition="Top" />
+    <ListView Id="Studienfächer_ListView" AllowEdit="True" NewItemRowPosition="Top" />
+  </Views>
+</Application>

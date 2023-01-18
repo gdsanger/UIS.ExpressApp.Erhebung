@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Erhebungsdaten_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item16">
+              <LayoutGroup Id="Item24">
+                <TabbedGroup Id="Item26">
+                  <LayoutGroup Id="Item27">
+                    <LayoutGroup Id="Auto757f07bf-4aa8-4cb8-a1f0-ca71cddd19e6">
+                      <LayoutItem Id="EF119" ViewItem="EF119" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item15">
+                <TabbedGroup Id="Item6">
+                  <LayoutGroup Id="Item11">
+                    <LayoutGroup Id="Autof75c3c1f-76c6-4374-8315-b30d510603ec">
+                      <LayoutItem Id="EF50" ViewItem="EF50" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item9">
+                    <LayoutGroup Id="Auto8413fb41-769a-4d77-8834-0227996ddba5">
+                      <LayoutItem Id="EF34" ViewItem="EF34" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item1">
+                    <LayoutGroup Id="Auto738d5477-11e8-4d57-8014-36f5272d9bc6">
+                      <LayoutGroup Id="Auto43705958-3920-4a2b-8745-3074b3790c81">
+                        <LayoutItem Id="EF12" ViewItem="EF12" />
+                        <LayoutItem Id="EF8" ViewItem="EF8" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto3868d0cf-7a0c-42cf-a7a4-2c7a541ea00b">
+                        <LayoutItem Id="EF13" ViewItem="EF13" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </TabbedGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
