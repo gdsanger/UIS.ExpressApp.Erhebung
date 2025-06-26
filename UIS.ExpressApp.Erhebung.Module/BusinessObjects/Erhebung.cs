@@ -333,6 +333,15 @@ namespace UIS.ExpressApp.Erhebung.Module.BusinessObjects
         {
             return text.Replace("\"", "");
         }
+
+        private string IncrementNumberString(string value)
+        {
+            if(string.IsNullOrWhiteSpace(value))
+                return value;
+            if(int.TryParse(value, out int number))
+                return (number + 1).ToString("D" + value.Length.ToString());
+            return value;
+        }
         [Action(Caption = "Kopieren", AutoCommit = true, ImageName = "Action_Copy")]
         public void CopyErhebung(CopyErhebungArgs args)
         {
@@ -362,6 +371,13 @@ namespace UIS.ExpressApp.Erhebung.Module.BusinessObjects
                         continue;
                     newData.SetMemberValue(member.Name, member.GetValue(data));
                 }
+
+                if(newData.EF28 == EinschreibungsArt.Ersteinschreibung || newData.EF28 == EinschreibungsArt.Neueinschreibung)
+                    newData.EF28 = EinschreibungsArt.Rückmeldung;
+
+                newData.EF21 = IncrementNumberString(newData.EF21);
+                newData.EF32 = IncrementNumberString(newData.EF32);
+
                 newData.Erhebung = newErhebung;
                 Session.Save(newData);
             }
