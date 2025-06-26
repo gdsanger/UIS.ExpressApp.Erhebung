@@ -6,6 +6,7 @@ using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
+using DevExpress.Xpo.Metadata;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -366,7 +367,7 @@ namespace UIS.ExpressApp.Erhebung.Module.BusinessObjects
                 Erhebungsdaten newData = new Erhebungsdaten(Session);
                 foreach(XPMemberInfo member in classInfo.PersistentProperties)
                 {
-                    if(member.IsKey || member.Name == nameof(Erhebungsdaten.Erhebung) ||
+                    if(member.IsKey || member.Name == "Erhebung" ||
                        member.Name == "GCRecord" || member.Name == "OptimisticLockField")
                         continue;
                     newData.SetMemberValue(member.Name, member.GetValue(data));
