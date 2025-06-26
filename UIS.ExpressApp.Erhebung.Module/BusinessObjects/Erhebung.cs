@@ -333,6 +333,39 @@ namespace UIS.ExpressApp.Erhebung.Module.BusinessObjects
         {
             return text.Replace("\"", "");
         }
+        [Action(Caption = "Kopieren", AutoCommit = true, ImageName = "Action_Copy")]
+        public void CopyErhebung(CopyErhebungArgs args)
+        {
+            if(args == null)
+                return;
+
+            Erhebung newErhebung = new Erhebung(Session)
+            {
+                Mandant = Mandant,
+                Berichtsart = Berichtsart,
+                Berichtsjahr = args.Berichtsjahr,
+                Semester = args.Semester
+            };
+            Session.Save(newErhebung);
+
+            XPClassInfo classInfo = Session.GetClassInfo(typeof(Erhebungsdaten));
+            foreach(Erhebungsdaten data in Erhebungsdaten)
+            {
+                if(data.EF28 == EinschreibungsArt.Exmatrikulation || data.EF28 == EinschreibungsArt.FrühereExmatrikulation)
+                    continue;
+
+                Erhebungsdaten newData = new Erhebungsdaten(Session);
+                foreach(XPMemberInfo member in classInfo.PersistentProperties)
+                {
+                    if(member.IsKey || member.Name == nameof(Erhebungsdaten.Erhebung) ||
+                       member.Name == "GCRecord" || member.Name == "OptimisticLockField")
+                        continue;
+                    newData.SetMemberValue(member.Name, member.GetValue(data));
+                }
+                newData.Erhebung = newErhebung;
+                Session.Save(newData);
+            }
+        }
         [Action(Caption = "Reset", AutoCommit = true, ConfirmationMessage ="Wollen Sie die Erhebung wirklich zurücksetzten? Es werden alle Daten in dieser Erhebung gelöscht!", ImageName = "Action_Clear")]
         public void Reset()
         {
@@ -392,6 +425,13 @@ namespace UIS.ExpressApp.Erhebung.Module.BusinessObjects
         public class ImportFileArgs
         {
             public FileData File { get; set; }
+        }
+
+        [NonPersistent]
+        public class CopyErhebungArgs
+        {
+            public int Berichtsjahr { get; set; }
+            public BerichtSemester Semester { get; set; }
         }
     }
 }
