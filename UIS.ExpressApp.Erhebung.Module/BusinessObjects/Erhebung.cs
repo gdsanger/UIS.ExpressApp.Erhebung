@@ -51,13 +51,12 @@ namespace UIS.ExpressApp.Erhebung.Module.BusinessObjects
             get { return GetPropertyValue<Berichtsarten>("Berichtsart"); }
             set { SetPropertyValue<Berichtsarten>("Berichtsart", value); }
         }
-        [RuleRequiredField()]
         public int Berichtsjahr
         {
             get { return GetPropertyValue<int>("Berichtsjahr"); }
             set { SetPropertyValue<int>("Berichtsjahr", value); }
         }
-        [RuleRequiredField()]
+
         public BerichtSemester Semester
         {
             get { return GetPropertyValue<BerichtSemester>("Semester"); }
@@ -92,6 +91,7 @@ namespace UIS.ExpressApp.Erhebung.Module.BusinessObjects
                 using (MemoryStream s = new MemoryStream())
                 {
                     args.File.SaveToStream(s);
+                    s.Position = 0;
                     using (StreamReader sr = new StreamReader(s))
                     {
                         ImportArgs targs = new ImportArgs
@@ -342,8 +342,7 @@ namespace UIS.ExpressApp.Erhebung.Module.BusinessObjects
 
         public void ExportIdevCsv()
         {
-            
-
+        
 
         }
 
@@ -354,30 +353,37 @@ namespace UIS.ExpressApp.Erhebung.Module.BusinessObjects
             Session.ExecuteNonQuery("Delete from FehlerProtokoll where Erhebung='" + Oid + "'");
             foreach(PlPrüfungen plp in Prüfungen)
             {
-                string sqlCommand;
-                if (!string.IsNullOrEmpty(plp.Prüfbedingung))
+                try
                 {
-                    sqlCommand = string.Format("Insert Into FehlerProtokoll(Oid, Erhebung, Erhebungsdaten, Prüfung) Select NewId(), Erhebung, Oid, '{0}' from Erhebungsdaten where Erhebung = '{1}' and {2}", plp.Oid, Oid, plp.Prüfbedingung);
-                    sqlCommand = sqlCommand.Replace("[EF1]", Mandant.Berichtsland);
-                    sqlCommand = sqlCommand.Replace("[EF2]", ((int)Semester).ToString());
-                    sqlCommand = sqlCommand.Replace("[EF3]", Berichtsjahr.ToString());
-                    sqlCommand = sqlCommand.Replace("[EF4]", Mandant.KeyHochschule);
+                    string sqlCommand;
+                    if (!string.IsNullOrEmpty(plp.Prüfbedingung))
+                    {
+                        sqlCommand = string.Format("Insert Into FehlerProtokoll(Oid, Erhebung, Erhebungsdaten, Prüfung) Select NewId(), Erhebung, Oid, '{0}' from Erhebungsdaten where Erhebung = '{1}' and {2}", plp.Oid, Oid, plp.Prüfbedingung);
+                        sqlCommand = sqlCommand.Replace("[EF1]", Mandant.Berichtsland);
+                        sqlCommand = sqlCommand.Replace("[EF2]", ((int)Semester).ToString());
+                        sqlCommand = sqlCommand.Replace("[EF3]", Berichtsjahr.ToString());
+                        sqlCommand = sqlCommand.Replace("[EF4]", Mandant.KeyHochschule);
 
-                }
-                else
-                {
-                    sqlCommand = plp.CustomSqlCommand;
-                    sqlCommand = sqlCommand.Replace("[Prüfung]", plp.Oid.ToString());
-                    sqlCommand = sqlCommand.Replace("[Erhebung]", Oid.ToString());
-                    sqlCommand = sqlCommand.Replace("[EF1]", Mandant.Berichtsland);
-                    sqlCommand = sqlCommand.Replace("[EF2]", ((int)Semester).ToString());
-                    sqlCommand = sqlCommand.Replace("[EF3]", Berichtsjahr.ToString());
-                    sqlCommand = sqlCommand.Replace("[EF4]", Mandant.KeyHochschule);
+                    }
+                    else
+                    {
+                        sqlCommand = plp.CustomSqlCommand;
+                        sqlCommand = sqlCommand.Replace("[Prüfung]", plp.Oid.ToString());
+                        sqlCommand = sqlCommand.Replace("[Erhebung]", Oid.ToString());
+                        sqlCommand = sqlCommand.Replace("[EF1]", Mandant.Berichtsland);
+                        sqlCommand = sqlCommand.Replace("[EF2]", ((int)Semester).ToString());
+                        sqlCommand = sqlCommand.Replace("[EF3]", Berichtsjahr.ToString());
+                        sqlCommand = sqlCommand.Replace("[EF4]", Mandant.KeyHochschule);
 
+                    }
+                    if (!string.IsNullOrEmpty(sqlCommand))
+                    {
+                        Session.ExecuteNonQuery(sqlCommand);
+                    }
                 }
-                if(!string.IsNullOrEmpty(sqlCommand))
+                catch(Exception ex)
                 {
-                    Session.ExecuteNonQuery(sqlCommand);
+                    throw new Exception("Fehler bei Prüfung " + plp.Name + " " + ex.Message);
                 }
             }
         }
