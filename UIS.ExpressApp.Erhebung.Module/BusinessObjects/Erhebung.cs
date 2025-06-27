@@ -392,8 +392,42 @@ namespace UIS.ExpressApp.Erhebung.Module.BusinessObjects
 
         public void ExportIdevCsv()
         {
-        
 
+
+        }
+
+        [Action(Caption = "Import Exmatrikulation CSV", AutoCommit = true)]
+        public void ImportExmatrikulationCSV(ImportArgs args)
+        {
+            string[] lines = args.ImportData.Split(Environment.NewLine.ToCharArray());
+            foreach(string line in lines)
+            {
+                if(string.IsNullOrWhiteSpace(line))
+                    continue;
+
+                string[] cols = line.Split(';');
+                if(cols.Length < 2)
+                    continue;
+
+                string debitor = cols[0].Trim();
+                string reason = ConvertToString(cols[1]);
+
+                if(int.TryParse(debitor, out int debNumber))
+                    debitor = debNumber.ToString("000000000000");
+                else if(debitor.Length < 12)
+                    debitor = debitor.PadLeft(12, '0');
+
+                Erhebungsdaten data = Session.FindObject<Erhebungsdaten>(new GroupOperator(GroupOperatorType.And,
+                    new BinaryOperator("EF6", debitor),
+                    new BinaryOperator("Erhebung", this)));
+
+                if(data != null)
+                {
+                    data.EF28 = EinschreibungsArt.Exmatrikulation;
+                    data.EF29 = reason;
+                    Session.Save(data);
+                }
+            }
         }
 
         [Action(Caption ="Daten prüfen", AutoCommit =true, ImageName = "Action_Validation_Validate")]
